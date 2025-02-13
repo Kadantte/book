@@ -23,8 +23,8 @@ struct that stores information about a user account.
 
 To use a struct after we’ve defined it, we create an _instance_ of that struct
 by specifying concrete values for each of the fields. We create an instance by
-stating the name of the struct and then add curly brackets containing _key:
-value_ pairs, where the keys are the names of the fields and the values are the
+stating the name of the struct and then add curly brackets containing _`key:
+value`_ pairs, where the keys are the names of the fields and the values are the
 data we want to store in those fields. We don’t have to specify the fields in
 the same order in which we declared them in the struct. In other words, the
 struct definition is like a general template for the type, and instances fill
@@ -148,7 +148,7 @@ Move”][move]<!-- ignore --> section. In this example, we can no longer use
 valid after creating `user2`. Both `active` and `sign_in_count` are types that
 implement the `Copy` trait, so the behavior we discussed in the [“Stack-Only
 Data: Copy”][copy]<!-- ignore --> section would apply. We can still use
-`user1.email` in this example, since its value was _not_ moved out.
+`user1.email` in this example, because its value was not moved out of `user1`.
 
 ### Using Tuple Structs Without Named Fields to Create Different Types
 
